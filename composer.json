@@ -2,7 +2,10 @@
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
-    "keywords": ["framework", "laravel"],
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
     "license": "MIT",
     "require": {
         "php": "^8.0.2",
@@ -25,8 +28,24 @@
         "psr-4": {
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
-        }
+            "Database\\Seeders\\": "database/seeders/",
+            "Helpers\\": "helpers/"
+        },
+        "files": [
+            "helpers/Funciones/funciones/ClienteClass.php",
+            "helpers/Funciones/funciones/Consumo.php",
+            "helpers/Funciones/funciones/Delivery.php",
+            "helpers/Funciones/funciones/Pedido.php",
+            "helpers/Funciones/funciones/PedidoItems.php",
+            "helpers/Funciones/funciones/Producto_ingrediente.php",
+            "helpers/Funciones/funciones/ProductoClass.php",
+            "helpers/Funciones/funciones/TiendaClass.php",
+            "helpers/Funciones/funciones/TipoProductoClass.php",
+            "helpers/Funciones/my_simple_crypt.php",
+            "helpers/Funciones/limpiar.php",
+            "helpers/Funciones/filtrado.php",
+            "helpers/izipay/izipay.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
