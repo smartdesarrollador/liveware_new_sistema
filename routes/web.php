@@ -16,3 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/crear_sesion', function () {
+
+    session(['key' => 'hola']);
+
+    return "se creo la sesion con exito";
+});
+
+Route::get('/ver_sesiones', function () {
+
+    dd(session()->all());
+});
